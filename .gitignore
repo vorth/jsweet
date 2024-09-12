@@ -8,3 +8,7 @@ core-lib/es6/jsweet-core/
 node_modules/
 package-lock.json
 
+
+transpiler/jsweet-transpiler-4.0.0-SNAPSHOT/
+
+typescript.java-ts.core/javadoc-out/

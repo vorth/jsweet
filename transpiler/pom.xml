@@ -49,24 +49,6 @@
 		<java.version.release>11</java.version.release>
 		<java.version>1.${java.version.release}</java.version>
 	</properties>
-	<repositories>
-		<repository>
-			<id>jsweet-central</id>
-			<name>libs-release</name>
-			<url>https://repository.jsweet.org/artifactory/libs-release-local</url>
-		</repository>
-		<repository>
-			<snapshots />
-			<id>jsweet-snapshots</id>
-			<name>libs-snapshot</name>
-			<url>https://repository.jsweet.org/artifactory/libs-snapshot-local</url>
-		</repository>
-		<repository>
-			<id>jsweet-external</id>
-			<name>libs-release</name>
-			<url>https://repository.jsweet.org/artifactory/ext-release-local</url>
-		</repository>
-	</repositories>
 	<build>
 		<resources>
 			<resource>
@@ -256,7 +238,7 @@
 		<dependency>
 			<groupId>org.jsweet.ext</groupId>
 			<artifactId>sourcemap-builder</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Test-only dependencies for testing candies -->
@@ -268,7 +250,7 @@
 			<optional>true</optional>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.jsweet.candies</groupId>
 			<artifactId>jquery</artifactId>
 			<version>1.10.0-20170726</version>
@@ -344,7 +326,7 @@
 			<version>75-20171101</version>
 			<scope>test</scope>
 			<optional>true</optional>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>javax.ws.rs</groupId>
@@ -358,16 +340,4 @@
 		<name>JSweet</name>
 		<url>http://www.jsweet.org</url>
 	</organization>
-	<distributionManagement>
-		<repository>
-			<id>jsweet-release</id>
-			<name>libs-release</name>
-			<url>https://repository.jsweet.org/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>jsweet-snapshots</id>
-			<name>libs-snapshot</name>
-			<url>https://repository.jsweet.org/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>
